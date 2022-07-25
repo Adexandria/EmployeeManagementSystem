@@ -31,9 +31,18 @@ namespace EmployeeManagementSystem.Controllers
             }
             return Ok(employee);
         }
-
-        [HttpPut("{employee}")]
-        public async Task<IActionResult> UpdateEmployee(Employee employee)
+        /* [HttpGet("search/id")]
+        public async Task<IActionResult> GetEmployee(int id)
+        {
+            Employee employee = await _db.GetEmployeeById(id);
+            if (employee is null)
+            {
+                return NotFound();//404
+            }
+            return Ok(employee);
+        }*/
+        [HttpPut("{employeeId}")]
+        public async Task<IActionResult> UpdateEmployee(int employeeId, Employee employee)
         {
             if (employee is null)
                 return NotFound();
@@ -41,7 +50,7 @@ namespace EmployeeManagementSystem.Controllers
             return Ok();
         }
 
-        [HttpGet("{name}/name")]
+        [HttpGet("search/name")]
         public async Task<IActionResult> GetEmployeeByName(string name)
         {
             var employee = await _db.GetEmployeeByName(name);
@@ -49,15 +58,6 @@ namespace EmployeeManagementSystem.Controllers
                 return NotFound();
             return Ok(employee);
         }
-        /* [HttpGet("search/id")]
-         public async Task<IActionResult> GetEmployee(int id)
-         {
-             Employee employee = await _db.GetEmployeeById(id);
-             if (employee is null)
-             {
-                 return NotFound();//404
-             }
-             return Ok(employee);
-         }*/
+       
     }
 }

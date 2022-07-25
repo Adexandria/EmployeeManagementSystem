@@ -18,13 +18,13 @@ namespace EmployeeManagementSystem.Sevices
                 .Database(
                     MsSqlConfiguration.MsSql2008
                         .ConnectionString(
-                            @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Asus\Documents\Employee.mdf; Integrated Security = True; Connect Timeout = 30")
+                            @"Data Source=(localdb)\MSSQLLocalDB;Database=EmployeeDb;Integrated Security=True;")
                         .ShowSql()
                 )
                 .Mappings(m => m.FluentMappings.AddFromAssemblyOf<EmployeeMap>())
                 .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false,true))
                 .BuildSessionFactory();
         }
-        //Data Source=(localdb)\MSSQLLocalDB;Database=EmployeeDb;Integrated Security=True;
+        
     }
 }
