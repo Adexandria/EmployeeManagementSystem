@@ -25,13 +25,13 @@ namespace EmployeeManagementSystem.Controllers
         public async Task<IActionResult> GetEmployeeById(int id)
         {
             Employee employee = await _db.GetEmployeeById(id);
-            if(employee is null)
+            if (employee is null)
             {
                 return NotFound();//404
             }
             return Ok(employee);
         }
-       /* [HttpGet("search/id")]
+        /* [HttpGet("search/id")]
         public async Task<IActionResult> GetEmployee(int id)
         {
             Employee employee = await _db.GetEmployeeById(id);
@@ -41,5 +41,23 @@ namespace EmployeeManagementSystem.Controllers
             }
             return Ok(employee);
         }*/
+        [HttpPut("{employeeId}")]
+        public async Task<IActionResult> UpdateEmployee(int employeeId, Employee employee)
+        {
+            if (employee is null)
+                return NotFound();
+            await _db.UpdateEmployee(employee);
+            return Ok();
+        }
+
+        [HttpGet("search/name")]
+        public async Task<IActionResult> GetEmployeeByName(string name)
+        {
+            var employee = await _db.GetEmployeeByName(name);
+            if (employee is null)
+                return NotFound();
+            return Ok(employee);
+        }
+       
     }
 }

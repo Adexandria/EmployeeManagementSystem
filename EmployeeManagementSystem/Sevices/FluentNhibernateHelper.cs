@@ -25,5 +25,6 @@ namespace EmployeeManagementSystem.Sevices
                 .ExposeConfiguration(cfg => new SchemaUpdate(cfg).Execute(false,true))
                 .BuildSessionFactory();
         }
+        
     }
 }

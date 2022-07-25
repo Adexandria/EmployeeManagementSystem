@@ -52,5 +52,9 @@ namespace EmployeeManagementSystem.Sevices
         }
 
         //Add another functionality
+        public async Task<Employee> GetEmployeeByName(string name)
+        {
+            return await session.Query<Employee>().Where(s => s.Name == name).FirstOrDefaultAsync();
+        }
     }
 }
