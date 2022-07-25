@@ -14,6 +14,7 @@ namespace EmployeeManagementSystem.Controllers
             _db = db;
         }
 
+        //POST
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Employee employee)
         {
