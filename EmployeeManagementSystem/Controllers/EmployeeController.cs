@@ -25,21 +25,39 @@ namespace EmployeeManagementSystem.Controllers
         public async Task<IActionResult> GetEmployeeById(int id)
         {
             Employee employee = await _db.GetEmployeeById(id);
-            if(employee is null)
-            {
-                return NotFound();//404
-            }
-            return Ok(employee);
-        }
-       /* [HttpGet("search/id")]
-        public async Task<IActionResult> GetEmployee(int id)
-        {
-            Employee employee = await _db.GetEmployeeById(id);
             if (employee is null)
             {
                 return NotFound();//404
             }
             return Ok(employee);
-        }*/
+        }
+
+        [HttpPut("{employee}")]
+        public async Task<IActionResult> UpdateEmployee(Employee employee)
+        {
+            if (employee is null)
+                return NotFound();
+            await _db.UpdateEmployee(employee);
+            return Ok();
+        }
+
+        [HttpGet("{name}/name")]
+        public async Task<IActionResult> GetEmployeeByName(string name)
+        {
+            var employee = await _db.GetEmployeeByName(name);
+            if (employee is null)
+                return NotFound();
+            return Ok(employee);
+        }
+        /* [HttpGet("search/id")]
+         public async Task<IActionResult> GetEmployee(int id)
+         {
+             Employee employee = await _db.GetEmployeeById(id);
+             if (employee is null)
+             {
+                 return NotFound();//404
+             }
+             return Ok(employee);
+         }*/
     }
 }

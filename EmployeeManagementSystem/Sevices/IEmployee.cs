@@ -9,6 +9,7 @@ namespace EmployeeManagementSystem.Sevices
         Task AddEmployee(Employee employee);
         Task UpdateEmployee(Employee employee);
         Task DeleteEmployee(Employee employee);
+        Task<Employee> GetEmployeeByName(string name);
 
     }
 }
