@@ -16,7 +16,7 @@ namespace EmployeeManagementSystem.Controllers
 
         //POST
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]Employee employee)
+        public async Task<IActionResult> Post([FromBody] Employee employee)
         {
             await _db.AddEmployee(employee);
             return Ok(employee);
@@ -69,11 +69,12 @@ namespace EmployeeManagementSystem.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromBody] Employee employee)
+        public async Task<IActionResult> DeleteEmployee(Employee employee)
         {
+            if (employee is null)
+                return NotFound();
             await _db.DeleteEmployee(employee);
-            return Ok(employee);
+            return Ok();
         }
-
     }
 }
