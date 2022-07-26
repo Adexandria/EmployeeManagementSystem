@@ -14,6 +14,7 @@ namespace EmployeeManagementSystem.Controllers
             _db = db;
         }
 
+        //Gideon
         //POST
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Employee employee)
@@ -68,6 +69,7 @@ namespace EmployeeManagementSystem.Controllers
             return Ok(employee);
         }
 
+        //Gideon
         [HttpDelete]
         public async Task<IActionResult> DeleteEmployee(Employee employee)
         {
