@@ -40,11 +40,11 @@ namespace EmployeeManagementSystem.Sevices
 
         public async Task UpdateEmployee(Employee employee) //Iruoma
         {
-            Employee currentEmployee = await session.Query<Employee>().FirstOrDefaultAsync(s => s.Id == employee.Id);
+/*          Employee currentEmployee = await session.Query<Employee>().FirstOrDefaultAsync(s => s.Id == employee.Id);
             if(employee is null)
             {
                 throw new NullReferenceException(nameof(employee));
-            }
+            }*/
             ITransaction transaction = session.BeginTransaction();
             await session.UpdateAsync(employee);
             await transaction.CommitAsync();
@@ -55,6 +55,11 @@ namespace EmployeeManagementSystem.Sevices
         public async Task<Employee> GetEmployeeByName(string name)
         {
             return await session.Query<Employee>().Where(s => s.Name == name).FirstOrDefaultAsync();
+        }
+
+        public IEnumerable<Employee> SearchEmployee(string name)
+        {
+            return session.Query<Employee>().Where(s=>s.Name.Contains(name));
         }
     }
 }

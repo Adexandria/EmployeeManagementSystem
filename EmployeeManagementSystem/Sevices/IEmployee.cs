@@ -10,6 +10,7 @@ namespace EmployeeManagementSystem.Sevices
         Task UpdateEmployee(Employee employee);
         Task DeleteEmployee(Employee employee);
         Task<Employee> GetEmployeeByName(string name);
+        IEnumerable<Employee> SearchEmployee(string name);
 
     }
 }

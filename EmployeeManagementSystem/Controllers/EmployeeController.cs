@@ -31,7 +31,9 @@ namespace EmployeeManagementSystem.Controllers
             }
             return Ok(employee);
         }
-        /* [HttpGet("search/id")]
+        //api/controller/3
+        //api/controller?id=3
+        [HttpGet("search/id")]
         public async Task<IActionResult> GetEmployee(int id)
         {
             Employee employee = await _db.GetEmployeeById(id);
@@ -40,15 +42,22 @@ namespace EmployeeManagementSystem.Controllers
                 return NotFound();//404
             }
             return Ok(employee);
-        }*/
-        [HttpPut("{employeeId}")]
-        public async Task<IActionResult> UpdateEmployee(int employeeId, Employee employee)
-        {
-            if (employee is null)
-                return NotFound();
-            await _db.UpdateEmployee(employee);
-            return Ok();
         }
+
+        //Add employee
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Employee employee)
+        {
+            Employee currentEmployee = await _db.GetEmployeeByName(employee.Name);
+            if (currentEmployee is not null)
+            {
+                return BadRequest("This employee already exists");
+            }
+            await _db.AddEmployee(employee);
+            return Ok(employee);
+        }
+        //api/controller/3?k=10
+
 
         [HttpGet("search/name")]
         public async Task<IActionResult> GetEmployeeByName(string name)
@@ -58,6 +67,38 @@ namespace EmployeeManagementSystem.Controllers
                 return NotFound();
             return Ok(employee);
         }
-       
+        //api/controller/search/names
+        //api/controller/search/name
+
+        [HttpGet("search/names")]
+        public IActionResult GetEmployeesByName(string name)
+        {
+            var employees = _db.SearchEmployee(name);
+            return Ok(employees);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateEmployee([FromBody]Employee employee)
+        {
+            /*  if (employee is null)
+                  return NotFound();*/
+            /*Employee currentEmployee = await _db.GetEmployeeById(employee.Id);
+            if (currentEmployee is null)
+            {
+                return NotFound("Employee not found");
+            }*/
+            await _db.UpdateEmployee(employee);
+            return Ok("Updated");
+        }
+
+        [HttpDelete("{employeeId}")]
+        public async Task<IActionResult> DeleteEmployee(int employeeId)
+        {
+            Employee currentEmployee = await _db.GetEmployeeById(employeeId);
+            if (currentEmployee is null)
+                return NotFound();
+            await _db.DeleteEmployee(currentEmployee);
+            return Ok("Deleted");
+        }
     }
 }
