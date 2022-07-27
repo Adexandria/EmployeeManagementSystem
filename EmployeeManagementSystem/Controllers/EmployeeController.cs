@@ -14,6 +14,16 @@ namespace EmployeeManagementSystem.Controllers
             _db = db;
         }
 
+        //Gideon
+        //POST
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] Employee employee)
+        {
+            await _db.AddEmployee(employee);
+            return Ok(employee);
+        }
+
+
         [HttpGet]
         public IActionResult GetEmployees()
         {
@@ -58,6 +68,15 @@ namespace EmployeeManagementSystem.Controllers
                 return NotFound();
             return Ok(employee);
         }
-       
+
+        //Gideon
+        [HttpDelete]
+        public async Task<IActionResult> DeleteEmployee(Employee employee)
+        {
+            if (employee is null)
+                return NotFound();
+            await _db.DeleteEmployee(employee);
+            return Ok();
+        }
     }
 }

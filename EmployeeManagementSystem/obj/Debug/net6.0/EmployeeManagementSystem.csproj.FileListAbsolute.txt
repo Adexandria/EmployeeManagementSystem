@@ -40,3 +40,45 @@ C:\Users\T14\source\repos\EmployeeManagementSystem\EmployeeManagementSystem\obj\
 C:\Users\T14\source\repos\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.pdb
 C:\Users\T14\source\repos\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.genruntimeconfig.cache
 C:\Users\T14\source\repos\EmployeeManagementSystem\EmployeeManagementSystem\obj\Debug\net6.0\ref\EmployeeManagementSystem.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\appsettings.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\EmployeeManagementSystem.exe
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\EmployeeManagementSystem.deps.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\EmployeeManagementSystem.runtimeconfig.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\EmployeeManagementSystem.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\EmployeeManagementSystem.pdb
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Antlr3.Runtime.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\FluentNHibernate.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Iesi.Collections.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\NHibernate.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Remotion.Linq.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Remotion.Linq.EagerFetching.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\scopedcss\bundle\EmployeeManagementSystem.styles.css
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\refint\EmployeeManagementSystem.dll
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.pdb
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\EmployeeManagementSystem.genruntimeconfig.cache
+C:\Users\ADMIN\Desktop\Phase II\TutorialWithAdeola\EmployeeManagementSystem-1\EmployeeManagementSystem\obj\Debug\net6.0\ref\EmployeeManagementSystem.dll
